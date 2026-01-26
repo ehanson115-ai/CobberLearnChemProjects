@@ -1,19 +1,33 @@
-# First, make sure you have PubChemPy installed:
-# pip install pubchempy
-
 import pubchempy as pcp
 
-# Fetch the compound "theobromine" from PubChem
-compound = pcp.get_compounds('theobromine', 'name')[0]
+def fetch_compound_data(compound_name):
+    compounds = pcp.get_compounds(compound_name, "name")
 
-# Print molecular weight
-print(f"Molecular weight: {compound.molecular_weight}")
+    if not compounds:
+        print(f"No data found for '{compound_name}'.")
+        return
 
-# Print molecular formula
-print(f"Molecular formula: {compound.molecular_formula}")
+    c = compounds[0]
 
-# Print SMILES string
-print(f"SMILES: {compound.isomeric_smiles}")
+    print("\n" + "=" * 55)
+    print(f" Compound Properties: {compound_name.capitalize()}")
+    print("=" * 55)
+
+    print(f"{'Molecular Formula':<25}: {c.molecular_formula}")
+    print(f"{'Molecular Weight':<25}: {c.molecular_weight}")
+    print(f"{'Canonical SMILES':<25}: {c.canonical_smiles}")
+    print(f"{'TPSA':<25}: {c.tpsa}")
+    print(f"{'Heavy Atom Count':<25}: {c.heavy_atom_count}")
+
+    print("=" * 55)
+
+
+# Example usage
+fetch_compound_data("theobromine")
+
+
+
+
 
 
 
