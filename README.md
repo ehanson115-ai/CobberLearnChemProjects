@@ -19,3 +19,4 @@ Weasel: This program simulates evolution in a simple way to gradually â€œevolveâ
 
 ArtificialNeuralNetwork: This project compares two models for predicting the boiling points of compounds based on their molecular weights: a simple linear regression and a neural network. The dataset includes 11 compounds with their molecular weights and boiling points. The code trains both models, evaluates their performance using metrics like MAE, MSE, and R squared, and creates plots to visualize predictions, residuals, and model comparisons. The project includes two interactive features: users can enter a molecular weight to see predicted boiling points from both models (my added twist on the project), and they can experiment with different neural network architectures by choosing the number of layers and neurons per layer.
 
+Convolution:
