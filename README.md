@@ -25,3 +25,5 @@ ImageClassifier: This project uses the pre-trained VGG16 convolutional neural ne
 
 QLearning: This project implements a Q-learning agent to solve the FrozenLake environment from OpenAI Gymnasium. The agent learns to navigate slippery ice, avoid holes, and reach the goal by updating a Q-table based on its experiences. During training, the agent balances exploration and exploitation, gradually improving its decisions, which is visualized through a learning curve and a policy map of directional arrows. This project taught me how reinforcement learning allows an agent to learn from trial and error, turning raw feedback into meaningful strategies. This is similar to how chemists interpret experimental data to draw conclusions from observations.  
 
+CartPole:  
+
